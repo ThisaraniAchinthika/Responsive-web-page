@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Travel Photo Gallery</title>
+    </head>
+    <body>
+        <header>
+            <h3 class="one">Travel Photo Gallery</h3>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Explore</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </header>
+        <section class="two">
+            <img class="image1 active" src="lk.jpg" alt="Sri Lanka Mountain"/>
+            <img class="image1" src="Wannago-Sri-Lanka.jpg" alt="Arugam Bay Sri Lanka"/>
+            <img class="image1" src="sigiriya2.jpg" alt="Sigiriya Sri Lanka"/>
+            <img class="image1" src="nine-arch.jpg" alt="Nine-arch Sri Lanka"/>
+            <img class="image1" src="food.jpg" alt="Sri Lankan Foods"/>
+            <div class="content active">
+                <h1>Sri Lanka</h1>
+                <h4>Country in South Asia</h4>
+                <p>Sri Lanka, formerly known as Ceylon and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, separated from the Indian peninsula by the Gulf of Mannar and the Palk Strait.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="content">
+                <h1>Beautiful</h1>
+                <h4>Beaches</h4>
+                <p>Sri Lanka is very famous for its beaches. The entire island is surrounded by blue crystal clear ocean. As a matter of fact, a lot of hotels are based near the beaches. Some beaches even have a historical significance. The beautiful, breath-taking and panoramic views of the western, southern, eastern and northern coastlines are yet another proof of choosing this island as your ultimate holiday destination.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="content">
+                <h1>Fascinating</h1>
+                <h4>World Heritage</h4>
+                <p>The 'Lion Fortress' of Sri Lanka was swallowed by the jungle. Built in the fifth century, Sri Lanka's Sigiriya fortress attracted the attention of British archaeologists in the 1800s, who were amazed by its leonine rock art and beautiful frescoes.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="content">
+                <h1>Road Trips</h1>
+                <h4>Places to travel for island adventures</h4>
+                <p>Hire a car and driver to road trip through Sri Lanka, it's the best way to explore the temples, national parks and beaches.</p>
+                <a href="#">Read More</a>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Roads</th>
+                        <th>Distance</th>
+                    </tr>
+                    <tr>
+                        <td class="tab-r1">Best road trip for beach lovers</td>
+                        <td>Colombo to Matara</td>
+                        <td>133 km (83 miles)</td>
+                    </tr>
+                    <tr>
+                        <td class="tab-r1">Best road trip for tea lovers</td>
+                        <td>Colombo to Badulla across the hill country</td>
+                        <td>240 km (145 miles)</td>
+                    </tr>
+                    <tr>
+                        <td class="tab-r1">Best trip for history</td>
+                        <td>Anuradhapura to Kandy</td>
+                        <td>180 km (112 miles)</td>
+                    </tr>
+                    <tr>
+                        <td class="tab-r1">Best for wildlife spotters</td>
+                        <td>Mirissa to Arugam Bay</td>
+                        <td>440 km (273 miles)</td>
+                    </tr>
+                    <tr>
+                        <td class="tab-r1">Best road trip for escaping the crowds</td>
+                        <td>Arugam Bay to Trincomalee</td>
+                        <td>260 km (162 miles)</td>
+                    </tr>
+                    <tr>
+                        <td class="tab-r1">Best road trip for Tamil culture</td>
+                        <td>Colombo to Jaffna</td>
+                        <td>600 km (373 miles)</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="content">
+                <h1>Tasty Foods</h1>
+                <h4>Sri Lankan cuisine</h4>
+                <p>Sri Lankan cuisine is known for its particular combinations of herbs, spices, fish, vegetables, rices, and fruits. The cuisine is highly centered around many varieties of rice, as well as coconut which is a ubiquitous plant throughout the country.</p>
+                <a href="#">Read More</a>
+                <ul class="food">
+                    <li>Rice and curry</li>
+                    <li>Milkrice</li>
+                    <li>Kottu</li>
+                    <li>Hoppers</li>
+                    <li>String Hoppers</li>
+                    <li>Lamprais</li>
+                    <li>Kool</li>
+                    <li>Pittu</li>
+                    <li>Roti</li>
+                    <li>Sambal</li>
+                </ul>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="slider">
+                <div class="slider-btn active"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+            </div>
+        </section>
+        <script lang="javascript" type="text/javascript" >
+            const sliderBtn = document.querySelectorAll(".slider-btn");
+            const slides = document.querySelectorAll(".image1");
+            const contents = document.querySelectorAll(".content");
+
+            var newSlider = function(manual) {
+                sliderBtn.forEach((btn) => {
+                    btn.classList.remove("active");
+                });
+
+                slides.forEach((slide) => {
+                    slide.classList.remove("active");
+                });
+
+                contents.forEach((content) => {
+                    content.classList.remove("active");
+                });
+
+                sliderBtn [manual].classList.add("active");
+                slides [manual].classList.add("active");
+                contents [manual].classList.add("active");
+            }
+
+            sliderBtn.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    newSlider(i);
+                })
+            })
+        </script>
+    </body>
+</html>

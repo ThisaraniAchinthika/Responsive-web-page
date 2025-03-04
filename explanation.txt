@@ -1,0 +1,10 @@
+I designed this web page as a travel photo gallery. This web page has the image-slider view and some information about the background images according to images.
+
+First, I input the basic html codes, and in the head, I link the CSS file and font awesome web fonts. 
+In the body, I use the header section to input the "TRAVEL PHOTO GALLERY" as an h3 tag and navigation bar. 
+
+After the header, I added the section tag to input every other thing. I first input only one image in the img tag and its content in the div tag. Then I input the JS code for the image slider buttons, After I confirmed that my code is working through Chrome Developer Tools, respectively I add the other four images and their contents, and the JS codes for slides and their contents. Then I input the social media icons with the help of a font awesome web page. As for icons, and slider buttons I use the transform: scale(), property to make them bigger when the mouse pointer is on them. Lastly, I input, animation on the first page, a table on the fourth page, and an unordered list on the fifth page. 
+
+Everything I changed using Chrome Developer Tools, I put inside the @media element in the CSS file.
+
+I hope this can be understandable.
